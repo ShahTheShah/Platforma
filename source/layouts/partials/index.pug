@@ -1,0 +1,19 @@
+extends init/default
+append styles
+
+append scripts
+
+block variables
+    -
+        let
+            page_title = 'Партнёр', // Название сайта(отображается на вкладке)
+            page_name  = 'index'; // Требуется при указании путей для стилей и скриптов принадлежащих именно этой странице
+
+block content
+    #root
+        include ../components/maps
+        include ../components/header
+        main.main
+            .main-conatainer.container
+                include ../components/projects
+
