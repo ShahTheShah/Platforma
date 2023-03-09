@@ -12,6 +12,7 @@
     }
     &_input, &_select {
         flex: 1;
+        max-width: 450px;
     }
     &-stages {
         gap: 15px;
