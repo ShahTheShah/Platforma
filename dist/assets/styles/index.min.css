@@ -559,11 +559,11 @@ body {
 
 .addProject-stage {
   flex: 1;
-  padding: 10px;
+  padding: 12px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
   height: 155px;
   background-color: #fff;
   border-radius: 40px;
@@ -577,8 +577,9 @@ body {
 }
 
 .addProject-stage_name {
-  padding: 0 20px;
-  height: 10%;
+  padding: 0 10px;
+  font-size: 100%;
+  line-height: calc(100% + 2px);
   word-wrap: break-word;
 }
 
