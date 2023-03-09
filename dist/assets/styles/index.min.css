@@ -778,12 +778,4 @@ body {
   width: 100%;
   height: 100%;
 }
-
-@media screen and (max-width: 1999.98px) {
-  .addProject-stages {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
 /*# sourceMappingURL=index.min.css.map */

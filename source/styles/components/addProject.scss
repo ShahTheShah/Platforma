@@ -16,11 +16,11 @@
     }
     &-stages {
         gap: 5px;
-        @include mediaQueryMax(2000px) {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
+        // @include mediaQueryMax(2000px) {
+        //     display: grid;
+        //     grid-template-columns: repeat(5, 1fr);
+        //     grid-template-rows: repeat(2, 1fr);
+        // }
         display: flex;
         justify-content: start;
         align-items: center;
