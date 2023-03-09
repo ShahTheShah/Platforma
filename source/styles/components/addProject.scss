@@ -4,24 +4,36 @@
     flex-direction: column;
     gap: 20px;
     &-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr 1fr;
-        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    &_input, &_select {
+        flex: 1;
     }
     &-stages {
+        gap: 15px;
+        @include mediaQueryMax(2000px) {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
-        gap: 20px;
+        flex-wrap: wrap;
     }
     &-stage {
+        // margin: 0 auto;
         flex: 1;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 30px;
-        height: 250px;
+        gap: 15px;
+        height: 230px;
         background-color: #fff;
         border-radius: 40px;
         text-align: center;
@@ -44,15 +56,27 @@
             flex-direction: column;
             gap: 30px;
             &_name {
+                margin: 0 20px;
                 border-radius: 20px;
                 background-color: $PRIMARY;
                 color: white;
             }
         }
         &-list {
-            padding: 20px;
+            padding: 0 30px;
             height: 90%;
             overflow: scroll;
+            &-item {
+            border-radius: 8px;
+                transition: $animation;
+                &:hover {
+                    cursor: pointer;
+                    background-color: $PRIMARY;
+                    font-weight: 500;
+                    color: white;
+                    transform: scale(1.2);
+                }
+            }
         }
     }
 }
