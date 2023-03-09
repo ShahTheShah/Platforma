@@ -287,7 +287,7 @@ body {
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 16px;
   color: black;
   font-feature-settings: "lnum";
   transition: all 0.2s linear;
@@ -305,16 +305,17 @@ body {
 }
 
 .main {
+  padding-top: 5px;
   position: fixed;
-  top: 90px;
+  top: 60px;
   left: 0;
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 60px);
   overflow-y: scroll;
 }
 
 .container {
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
 .link {
@@ -328,7 +329,7 @@ body {
 
 .button {
   position: relative;
-  padding: 15px 25px;
+  padding: 5px 15px;
   background-color: #AA82FF;
   border-radius: 20px;
   color: white;
@@ -373,16 +374,17 @@ body {
 }
 
 .main {
+  padding-top: 5px;
   position: fixed;
-  top: 90px;
+  top: 60px;
   left: 0;
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 60px);
   overflow-y: scroll;
 }
 
 .container {
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
 .link {
@@ -396,7 +398,7 @@ body {
 
 .button {
   position: relative;
-  padding: 15px 25px;
+  padding: 5px 15px;
   background-color: #AA82FF;
   border-radius: 20px;
   color: white;
@@ -434,7 +436,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 60px;
 }
 
 .header-container {
@@ -450,18 +452,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 40px;
+  gap: 15px;
 }
 
 .nav-item--link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-item_image {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .nav-item_image svg {
@@ -471,18 +473,18 @@ body {
 }
 
 .nav-item_name {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .user {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .user_settings {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .user_settings svg {
@@ -494,7 +496,7 @@ body {
 .user-data {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .user_photo {
@@ -505,32 +507,32 @@ body {
 }
 
 .user_photo__wrapper {
-  width: 68px;
-  height: 68px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 4px solid #AA82FF;
 }
 
 .user_name {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .console {
-  padding: 20px 0;
+  padding: 0px 0 20px;
 }
 
 .console-header {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 20px;
+  gap: 5px;
 }
 
 .addProject {
-  padding: 20px 0;
+  padding: 5px 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 .addProject-header {
@@ -538,7 +540,7 @@ body {
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 5px;
 }
 
 .addProject_input,
@@ -548,7 +550,7 @@ body {
 }
 
 .addProject-stages {
-  gap: 15px;
+  gap: 5px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -625,7 +627,7 @@ body {
 }
 
 .projects-param {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -638,34 +640,34 @@ body {
 }
 
 .projects-param:nth-child(3) {
-  grid-column: 6/14;
+  grid-column: 6/12;
 }
 
 .projects-param:nth-child(4) {
-  grid-column: 14/17;
+  grid-column: 12/15;
 }
 
 .projects-param:nth-child(5) {
-  grid-column: 17/20;
+  grid-column: 15/18;
 }
 
 .projects-param:nth-child(6) {
-  grid-column: 20/22;
+  grid-column: 18/20;
 }
 
 .projects-param:nth-child(7) {
-  grid-column: 22/25;
+  grid-column: 20/24;
 }
 
 .projects-list {
-  padding: 30px 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 .project {
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: grid;
   grid-template-columns: 50px repeat(23, 1fr);
   align-items: center;
@@ -702,15 +704,15 @@ body {
 }
 
 .project_location {
-  grid-column: 6/14;
+  grid-column: 6/12;
 }
 
 .project_cadastre {
-  grid-column: 14/17;
+  grid-column: 12/15;
 }
 
 .project_parameters {
-  grid-column: 17/20;
+  grid-column: 15/18;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -718,11 +720,11 @@ body {
 }
 
 .project_price {
-  grid-column: 20/22;
+  grid-column: 18/20;
 }
 
 .project-stage {
-  grid-column: 22/24;
+  grid-column: 20/24;
 }
 
 .project-stage-steps {
