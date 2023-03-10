@@ -1,0 +1,132 @@
+form(action="/").controls
+    if name == 'index'
+        .controls-header
+            select.addProject_client.select(name="client_name")
+                option(value="Дима Inc.") Дима Inc.
+                option(value="Дима Inc.") Дима Inc.asdf
+                option(value="Дима Inc.") Дима Inc.wefewfewf
+                option(value="Дима Inc.") Дима Inc.efwef
+            input.addProject_input.input(
+                name="number"
+                placeholder='Номер'
+                type="text"
+            )
+            input.addProject_input.input(
+                name="location"
+                placeholder='Местоположение'
+                type="text"
+            )
+            input.addProject_input.input(
+                name="cadastre"
+                placeholder='Кадастр'
+                type="text"
+            )
+        ul.controls-stages
+            li.controls-stage
+                .controls-stage_name Обследование
+                .controls-stage-content
+                    .controls-stage-user
+                        .controls-stage-user_name Иванов И. И.
+                        .controls-stage-user_photo__wrapper
+                            img.controls-stage-user_photo(src="@images/photo.png", alt="")
+            li.controls-stage
+                .controls-stage_name Геодезические изыскания
+                .controls-stage-content
+                    .controls-stage-user
+                        .controls-stage-user_name Иванов И. И.
+                        .controls-stage-user_photo__wrapper
+                            img.controls-stage-user_photo(src="@images/photo.png", alt="")
+            li.controls-stage
+                .controls-stage_name Проектирование
+                .controls-stage-content
+                    ul.controls-stage-list
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+            li.controls-stage
+                .controls-stage_name Н.Контр
+                .controls-stage-content
+                    .controls-stage-user
+                        .controls-stage-user_name Иванов И. И.
+                        .controls-stage-user_photo__wrapper
+                            img.controls-stage-user_photo(src="@images/photo.png", alt="")
+            li.controls-stage
+                .controls-stage_name Печать для согласования
+                .controls-stage-content
+                    .controls-stage-user
+                        .controls-stage-user_name Иванов И. И.
+                        .controls-stage-user_photo__wrapper
+                            img.controls-stage-user_photo(src="@images/photo.png", alt="")
+            li.controls-stage
+                .controls-stage_name Согласование
+                .controls-stage-content
+                    ul.controls-stage-list
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+            li.controls-stage
+                .controls-stage_name Сметная документация
+                .controls-stage-content
+                    .controls-stage-user
+                        .controls-stage-user_name Иванов И. И.
+                        .controls-stage-user_photo__wrapper
+                            img.controls-stage-user_photo(src="@images/photo.png", alt="")
+            li.controls-stage
+                .controls-stage_name Согласование заказчика
+                .controls-stage-content
+                    .controls-stage-user
+                        .controls-stage-user_name Иванов И. И.
+                        .controls-stage-user_photo__wrapper
+                            img.controls-stage-user_photo(src="@images/photo.png", alt="")
+            li.controls-stage
+                .controls-stage_name Печать для сдачи
+                .controls-stage-content
+                    ul.controls-stage-list
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+            li.controls-stage
+                .controls-stage_name Сдача по накладной
+                .controls-stage-content
+                    ul.controls-stage-list
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+                        li.controls-stage-list-item Иванов И. И.
+    if name == 'clients'
+        .controls-header
+            input.addProject_input.input(
+                type="text"
+                placeholder='Организация'
+            )

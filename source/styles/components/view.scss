@@ -1,4 +1,8 @@
-.projects {
+.view {
+    position: absolute;
+    top: 248px; left: 0;
+    height: calc(100% - 248px);
+    width: 100%;
     &-params {
         padding: 0 10px;
         display: grid;

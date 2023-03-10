@@ -306,11 +306,11 @@ body {
 
 .main {
   padding-top: 5px;
-  position: fixed;
-  top: 60px;
+  position: absolute;
+  top: 65px;
   left: 0;
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100% - 65px);
   overflow-y: scroll;
 }
 
@@ -376,11 +376,11 @@ body {
 
 .main {
   padding-top: 5px;
-  position: fixed;
-  top: 60px;
+  position: absolute;
+  top: 65px;
   left: 0;
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100% - 65px);
   overflow-y: scroll;
 }
 
@@ -434,11 +434,12 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
+  background-color: #fff;
 }
 
 .header-container {
@@ -446,7 +447,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 100px;
-  background-color: #fff;
 }
 
 .nav {
@@ -520,7 +520,11 @@ body {
 }
 
 .console {
-  padding: 0px 0 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 248px;
+  width: 100%;
 }
 
 .console-header {
@@ -530,14 +534,14 @@ body {
   gap: 5px;
 }
 
-.addProject {
+.controls {
   padding: 5px 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.addProject-header {
+.controls-header {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -545,13 +549,13 @@ body {
   gap: 5px;
 }
 
-.addProject_input,
-.addProject_select {
+.controls_input,
+.controls_select {
   flex: 1;
   max-width: 450px;
 }
 
-.addProject-stages {
+.controls-stages {
   gap: 5px;
   display: flex;
   justify-content: start;
@@ -559,7 +563,7 @@ body {
   flex-wrap: wrap;
 }
 
-.addProject-stage {
+.controls-stage {
   flex: 1;
   padding: 12px 10px;
   display: flex;
@@ -574,52 +578,52 @@ body {
   transition: all 0.2s linear;
 }
 
-.addProject-stage:hover {
+.controls-stage:hover {
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
 }
 
-.addProject-stage_name {
+.controls-stage_name {
   padding: 0 20px;
   font-size: 100%;
   line-height: calc(100% + 2px);
   word-wrap: break-word;
 }
 
-.addProject-stage-content {
+.controls-stage-content {
   height: calc(90% - 30px);
 }
 
-.addProject-stage-user {
+.controls-stage-user {
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.addProject-stage-user_name {
+.controls-stage-user_name {
   margin: 0 20px;
   border-radius: 20px;
   background-color: #AA82FF;
   color: white;
 }
 
-.addProject-stage-user_photo {
+.controls-stage-user_photo {
   width: 50px;
   height: 50px;
 }
 
-.addProject-stage-list {
+.controls-stage-list {
   padding: 0 30px;
   height: 90%;
   overflow: scroll;
 }
 
-.addProject-stage-list-item {
+.controls-stage-list-item {
   border-radius: 8px;
   transition: all 0.2s linear;
 }
 
-.addProject-stage-list-item:hover {
+.controls-stage-list-item:hover {
   cursor: pointer;
   background-color: #AA82FF;
   font-weight: 500;
@@ -627,47 +631,55 @@ body {
   transform: scale(1.2);
 }
 
-.projects-params {
+.view {
+  position: absolute;
+  top: 248px;
+  left: 0;
+  height: calc(100% - 248px);
+  width: 100%;
+}
+
+.view-params {
   padding: 0 10px;
   display: grid;
   grid-template-columns: 50px repeat(23, 1fr);
   gap: 10px;
 }
 
-.projects-param {
+.view-param {
   font-size: 16px;
   font-weight: 400;
 }
 
-.projects-param:nth-child(1) {
+.view-param:nth-child(1) {
   grid-column: 2/4;
 }
 
-.projects-param:nth-child(2) {
+.view-param:nth-child(2) {
   grid-column: 4/6;
 }
 
-.projects-param:nth-child(3) {
+.view-param:nth-child(3) {
   grid-column: 6/13;
 }
 
-.projects-param:nth-child(4) {
+.view-param:nth-child(4) {
   grid-column: 13/16;
 }
 
-.projects-param:nth-child(5) {
+.view-param:nth-child(5) {
   grid-column: 16/20;
 }
 
-.projects-param:nth-child(6) {
+.view-param:nth-child(6) {
   grid-column: 20/22;
 }
 
-.projects-param:nth-child(7) {
+.view-param:nth-child(7) {
   grid-column: 22/24;
 }
 
-.projects-list {
+.view-list {
   padding: 12px 0;
   display: flex;
   flex-direction: column;
@@ -782,29 +794,29 @@ body {
 }
 
 @media screen and (max-width: 1999.98px) {
-  .addProject-stages {
+  .controls-stages {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .projects-param:nth-child(3) {
+  .view-param:nth-child(3) {
     grid-column: 6/12;
   }
 
-  .projects-param:nth-child(4) {
+  .view-param:nth-child(4) {
     grid-column: 12/15;
   }
 
-  .projects-param:nth-child(5) {
+  .view-param:nth-child(5) {
     grid-column: 15/18;
   }
 
-  .projects-param:nth-child(6) {
+  .view-param:nth-child(6) {
     grid-column: 18/20;
   }
 
-  .projects-param:nth-child(7) {
+  .view-param:nth-child(7) {
     grid-column: 20/24;
   }
 
