@@ -304,18 +304,18 @@ body {
   background-color: #E9ECEF;
 }
 
-.main {
-  padding-top: 5px;
-  position: absolute;
-  top: 65px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 65px);
-  overflow-y: scroll;
+.container {
+  position: relative;
+  padding: 10px 20px;
 }
 
-.container {
-  padding: 10px 20px;
+.main {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 75px);
+  overflow-y: scroll;
 }
 
 .link {
@@ -374,18 +374,18 @@ body {
   background-color: #E9ECEF;
 }
 
-.main {
-  padding-top: 5px;
-  position: absolute;
-  top: 65px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 65px);
-  overflow-y: scroll;
+.container {
+  position: relative;
+  padding: 10px 20px;
 }
 
-.container {
-  padding: 10px 20px;
+.main {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 75px);
+  overflow-y: scroll;
 }
 
 .link {
@@ -438,7 +438,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #fff;
 }
 
@@ -520,11 +520,12 @@ body {
 }
 
 .console {
+  padding: 0 20px;
   position: absolute;
   top: 0;
   left: 0;
-  height: 248px;
   width: 100%;
+  height: 236px;
 }
 
 .console-header {
@@ -632,11 +633,13 @@ body {
 }
 
 .view {
+  padding: 0 20px;
   position: absolute;
-  top: 248px;
+  top: 241px;
   left: 0;
-  height: calc(100% - 248px);
+  height: calc(100vh - 236px - 75px - 5px);
   width: 100%;
+  overflow: hidden;
 }
 
 .view-params {
@@ -680,10 +683,13 @@ body {
 }
 
 .view-list {
-  padding: 12px 0;
+  padding: 12px 20px;
+  margin: 0 -20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  height: calc(100vh - 75px - 236px - 5px - 5px - 14px);
+  overflow-y: scroll;
 }
 
 .project {
@@ -794,10 +800,19 @@ body {
 }
 
 @media screen and (max-width: 1999.98px) {
+  .console {
+    height: 396px;
+  }
+
   .controls-stages {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .view {
+    top: 401px;
+    height: calc(100vh - 396px - 75px - 5px);
   }
 
   .view-param:nth-child(3) {
@@ -818,6 +833,10 @@ body {
 
   .view-param:nth-child(7) {
     grid-column: 20/24;
+  }
+
+  .view-list {
+    height: calc(100vh - 75px - 396px - 5px - 5px - 14px);
   }
 
   .project_location {

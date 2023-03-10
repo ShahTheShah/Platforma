@@ -1,8 +1,15 @@
 .view {
+    padding: 0 20px;
     position: absolute;
-    top: 248px; left: 0;
-    height: calc(100% - 248px);
+    top: 241px;
+    left: 0;
+    height: calc(100vh - 236px - 75px - 5px);
     width: 100%;
+    overflow: hidden;
+    @include mediaQueryMax(2000px) {
+        top: 401px;
+        height: calc(100vh - 396px - 75px - 5px);
+    }
     &-params {
         padding: 0 10px;
         display: grid;
@@ -53,10 +60,16 @@
         }
     }
     &-list {
-        padding: 12px 0;
+        padding: 12px 20px;
+        margin: 0 -20px;
         display: flex;
         flex-direction: column;
         gap: 5px;
+        height: calc(100vh - 75px - 236px - 5px - 5px - 14px);
+        @include mediaQueryMax(2000px) {
+            height: calc(100vh - 75px - 396px - 5px - 5px - 14px);
+        }
+        overflow-y: scroll;
     }
 }
 
