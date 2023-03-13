@@ -1,12 +1,20 @@
 section.console
     .console-header
-        button.console_button.button Добавить &nbsp;
+        button.console_button.button
             if name == 'index'
-                | объект
+                | Добавить объект
             else if name == 'clients'
-                | организацию
+                | Добавить организацию
             else if name == 'workers'
-                | сотрудника
-        button.console_button.button Сохранить
+                | Добавить сотрудника
+            else if name == 'project'
+                | Остановить цикл
+        button.console_button.button
+            if name == 'project'
+                | Выйти
+            else
+                | Отмена
+        if name == 'project'
+            p.console_projectName ТП-33/1 31/123-22
     .console-controls
         include ./controls

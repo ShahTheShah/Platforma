@@ -2,15 +2,26 @@
     padding: 0 20px;
     position: absolute;
     top: 0; left: 0;
-    width: 100%; height: 236px;
+    width: 100%;
+    // height: 236px;
     @include mediaQueryMax(2000px) {
         height: 396px;
     }
     &-header {
+        position: relative;
+        padding-bottom: $gap_root;
         display: flex;
         align-items: center;
         justify-content: start;
         gap: 5px;
+    }
+    &_projectName {
+        position: absolute;
+        top: calc(50% - 9px);
+        left: calc(50% - 150px);
+        font-size: 18px;
+        line-height: 18px;
+        width: 300px;
     }
 }
 

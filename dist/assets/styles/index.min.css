@@ -314,7 +314,7 @@ body {
   top: 75px;
   left: 0;
   width: 100%;
-  height: calc(100% - 75px);
+  height: calc(100% - 70px - 5px);
   overflow-y: scroll;
 }
 
@@ -329,7 +329,11 @@ body {
 
 .button {
   position: relative;
-  padding: 8px 15px;
+  padding: 0 15px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #AA82FF;
   border-radius: 20px;
   color: white;
@@ -361,6 +365,105 @@ body {
 .input:focus,
 .select:focus {
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-parentList {
+  gap: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-main,
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.14);
+  transition: all 0.2s linear;
+}
+
+.card-main:hover,
+.card-footer:hover {
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
+}
+
+.card-main {
+  padding: 12px 10px;
+  height: 155px;
+  flex-direction: column;
+}
+
+.card-footer {
+  padding: 5px 10px;
+}
+
+.card-footer.green {
+  background-color: #5EFA50;
+}
+
+.card_name {
+  padding: 0 20px;
+  font-size: 100%;
+  line-height: calc(100% + 2px);
+  word-wrap: break-word;
+}
+
+.card-content {
+  height: calc(90% - 30px);
+}
+
+.card-user {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-user_name {
+  margin: 0 20px;
+  border-radius: 20px;
+  background-color: #AA82FF;
+  color: white;
+}
+
+.card-user_photo {
+  width: 50px;
+  height: 50px;
+}
+
+.card-list {
+  padding: 0 30px;
+  height: 90%;
+  overflow: scroll;
+}
+
+.card-list-item {
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.card-list-item:hover {
+  cursor: pointer;
+  background-color: #AA82FF;
+  font-weight: 500;
+  color: white;
+  transform: scale(1.2);
+}
+
+.stages {
+  display: flex;
 }
 
 #root {
@@ -384,7 +487,7 @@ body {
   top: 75px;
   left: 0;
   width: 100%;
-  height: calc(100% - 75px);
+  height: calc(100% - 70px - 5px);
   overflow-y: scroll;
 }
 
@@ -399,7 +502,11 @@ body {
 
 .button {
   position: relative;
-  padding: 8px 15px;
+  padding: 0 15px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #AA82FF;
   border-radius: 20px;
   color: white;
@@ -431,6 +538,105 @@ body {
 .input:focus,
 .select:focus {
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-parentList {
+  gap: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-main,
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.14);
+  transition: all 0.2s linear;
+}
+
+.card-main:hover,
+.card-footer:hover {
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
+}
+
+.card-main {
+  padding: 12px 10px;
+  height: 155px;
+  flex-direction: column;
+}
+
+.card-footer {
+  padding: 5px 10px;
+}
+
+.card-footer.green {
+  background-color: #5EFA50;
+}
+
+.card_name {
+  padding: 0 20px;
+  font-size: 100%;
+  line-height: calc(100% + 2px);
+  word-wrap: break-word;
+}
+
+.card-content {
+  height: calc(90% - 30px);
+}
+
+.card-user {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-user_name {
+  margin: 0 20px;
+  border-radius: 20px;
+  background-color: #AA82FF;
+  color: white;
+}
+
+.card-user_photo {
+  width: 50px;
+  height: 50px;
+}
+
+.card-list {
+  padding: 0 30px;
+  height: 90%;
+  overflow: scroll;
+}
+
+.card-list-item {
+  border-radius: 8px;
+  transition: all 0.2s linear;
+}
+
+.card-list-item:hover {
+  cursor: pointer;
+  background-color: #AA82FF;
+  font-weight: 500;
+  color: white;
+  transform: scale(1.2);
+}
+
+.stages {
+  display: flex;
 }
 
 .header {
@@ -525,18 +731,27 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 236px;
 }
 
 .console-header {
+  position: relative;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 5px;
 }
 
+.console_projectName {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 150px);
+  font-size: 18px;
+  line-height: 18px;
+  width: 300px;
+}
+
 .controls {
-  padding: 5px 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -551,85 +766,19 @@ body {
 }
 
 .controls_input,
-.controls_select {
+.controls_select,
+.controls_text {
   flex: 1;
-  max-width: 450px;
-}
-
-.controls-stages {
-  gap: 5px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
   flex-wrap: wrap;
 }
 
-.controls-stage {
-  flex: 1;
-  padding: 12px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-  height: 155px;
-  background-color: #fff;
-  border-radius: 40px;
-  text-align: center;
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.14);
-  transition: all 0.2s linear;
+.controls_text:nth-child(2) {
+  flex: 2;
 }
 
-.controls-stage:hover {
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.24);
-}
-
-.controls-stage_name {
-  padding: 0 20px;
-  font-size: 100%;
-  line-height: calc(100% + 2px);
-  word-wrap: break-word;
-}
-
-.controls-stage-content {
-  height: calc(90% - 30px);
-}
-
-.controls-stage-user {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.controls-stage-user_name {
-  margin: 0 20px;
-  border-radius: 20px;
-  background-color: #AA82FF;
-  color: white;
-}
-
-.controls-stage-user_photo {
-  width: 50px;
-  height: 50px;
-}
-
-.controls-stage-list {
-  padding: 0 30px;
-  height: 90%;
-  overflow: scroll;
-}
-
-.controls-stage-list-item {
-  border-radius: 8px;
-  transition: all 0.2s linear;
-}
-
-.controls-stage-list-item:hover {
-  cursor: pointer;
-  background-color: #AA82FF;
-  font-weight: 500;
-  color: white;
-  transform: scale(1.2);
+.controls_text:nth-child(3) {
+  -moz-column-break-after: always;
+  break-after: always;
 }
 
 .view {
@@ -674,7 +823,7 @@ body {
   grid-column: 16/20;
 }
 
-.view-param:nth-child(6) {
+qq .view-param:nth-child(6) {
   grid-column: 20/22;
 }
 
@@ -800,14 +949,20 @@ body {
 }
 
 @media screen and (max-width: 1999.98px) {
-  .console {
-    height: 396px;
-  }
-
-  .controls-stages {
+  .card-parentList {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card-parentList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .console {
+    height: 396px;
   }
 
   .view {

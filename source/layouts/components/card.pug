@@ -1,0 +1,14 @@
+li.card
+    .card-main
+        .card_name Обследование
+        .card-content
+            .card-user
+                .card-user_name Иванченко К. Р.
+                .card-user_photo__wrapper
+                    img.card-user_photo(src="@images/photo.png", alt="")
+    if name == 'project'
+        .card-footer.green
+            date.card-date 12.03.2003
+            .card-finish
+                span.card-finish--data 5
+                | &nbsp;Д
