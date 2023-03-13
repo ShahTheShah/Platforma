@@ -16,11 +16,16 @@
 
 .main {
     position: absolute;
-    top: calc($header_height + $gap_root);
+    top: calc($header_height + $elems_gap);
     left: 0;
     width: 100%;
-    height: calc(100% - $header_height - $gap_root);
+    height: calc(100% - $header_height - $elems_gap);
     overflow-y: scroll;
+    &-container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .link {
@@ -167,9 +172,28 @@
 }
 
 .stages {
+    padding-top: 30px;
     display: flex;
+    flex-wrap: wrap;
+    gap: $elems_gap;
 
     &-item {
-
+        // flex: 1;
+        padding: 5px 10px;
+        display: block;
+        height: 25px;
+        min-width: 80px;
+        background-color: #fff;
+        border-radius: 20px;
+        &:nth-child(10) {
+            break-after: always;
+        }
+        &.green {
+            background-color: $GREEN;
+        }
+        &.red {
+            color: white;
+            background-color: $RED;
+        }
     }
 }

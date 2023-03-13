@@ -16,5 +16,13 @@ section.console
                 | Отмена
         if name == 'project'
             p.console_projectName ТП-33/1 31/123-22
-    .console-controls
+    .console-content
+        if name == 'project'
+            .console-projectData
+                p.console_text.input Заказчик
+                p.console_text.input Местоположение
+                p.console_text.input Кадастр
+                p.console_text.input Параметры
+                p.console_text.input Сумма
+                p.console_text.input Стадия работы
         include ./controls

@@ -318,6 +318,12 @@ body {
   overflow-y: scroll;
 }
 
+.main-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .link {
   color: black;
   text-decoration: none;
@@ -463,7 +469,33 @@ body {
 }
 
 .stages {
+  padding-top: 30px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.stages-item {
+  padding: 5px 10px;
+  display: block;
+  height: 25px;
+  min-width: 80px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.stages-item:nth-child(10) {
+  -moz-column-break-after: always;
+  break-after: always;
+}
+
+.stages-item.green {
+  background-color: #5EFA50;
+}
+
+.stages-item.red {
+  color: white;
+  background-color: #dc3545;
 }
 
 #root {
@@ -491,6 +523,12 @@ body {
   overflow-y: scroll;
 }
 
+.main-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .link {
   color: black;
   text-decoration: none;
@@ -636,7 +674,33 @@ body {
 }
 
 .stages {
+  padding-top: 30px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.stages-item {
+  padding: 5px 10px;
+  display: block;
+  height: 25px;
+  min-width: 80px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.stages-item:nth-child(10) {
+  -moz-column-break-after: always;
+  break-after: always;
+}
+
+.stages-item.green {
+  background-color: #5EFA50;
+}
+
+.stages-item.red {
+  color: white;
+  background-color: #dc3545;
 }
 
 .header {
@@ -727,9 +791,6 @@ body {
 
 .console {
   padding: 0 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 
@@ -751,6 +812,25 @@ body {
   width: 300px;
 }
 
+.console-projectData {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.console_text {
+  flex: 1;
+}
+
+.console_text:nth-child(2) {
+  flex: 2;
+}
+
+.console_text:nth-child(3) {
+  -moz-column-break-after: always;
+  break-after: always;
+}
+
 .controls {
   display: flex;
   flex-direction: column;
@@ -766,27 +846,13 @@ body {
 }
 
 .controls_input,
-.controls_select,
-.controls_text {
+.controls_select {
   flex: 1;
   flex-wrap: wrap;
 }
 
-.controls_text:nth-child(2) {
-  flex: 2;
-}
-
-.controls_text:nth-child(3) {
-  -moz-column-break-after: always;
-  break-after: always;
-}
-
 .view {
-  padding: 0 20px;
-  position: absolute;
-  top: 241px;
-  left: 0;
-  height: calc(100vh - 236px - 75px - 5px);
+  padding: 5px 20px;
   width: 100%;
   overflow: hidden;
 }
@@ -959,15 +1025,6 @@ qq .view-param:nth-child(6) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
-
-  .console {
-    height: 396px;
-  }
-
-  .view {
-    top: 401px;
-    height: calc(100vh - 396px - 75px - 5px);
   }
 
   .view-param:nth-child(3) {

@@ -1,14 +1,14 @@
 .view {
-    padding: 0 20px;
-    position: absolute;
-    top: 241px;
-    left: 0;
-    height: calc(100vh - 236px - 75px - 5px);
+    padding: $elems_gap 20px;
+    // position: absolute;
+    // top: 241px;
+    // left: 0;
+    // height: calc(100vh - 236px - 75px - 5px);
     width: 100%;
     overflow: hidden;
     @include mediaQueryMax(2000px) {
-        top: 401px;
-        height: calc(100vh - 396px - 75px - 5px);
+        // top: 401px;
+        // height: calc(100vh - 396px - 75px - 5px);
     }
     &-params {
         padding: 0 10px;

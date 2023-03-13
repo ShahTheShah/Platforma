@@ -11,38 +11,40 @@ section.view
             li.view-param Параметры
             li.view-param Сумма
             li.view-param Стадия работы
-    ul.view-list
-        if name == 'index'
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-            include ./project
-        else if name == 'clients'
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-            include ./client
-    include ./stages
+    if name == 'index'
+        ul.view-list
+            if name == 'index'
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+                include ./project
+            else if name == 'clients'
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+                include ./client
+    else if name == 'project'
+        include ./stages

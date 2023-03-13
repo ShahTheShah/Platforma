@@ -10,15 +10,8 @@
         flex-wrap: wrap;
         gap: 5px;
     }
-    &_input, &_select, &_text {
+    &_input, &_select {
         flex: 1;
         flex-wrap: wrap;
     }
-    &_text:nth-child(2) {
-        flex: 2;
-    }
-    &_text:nth-child(3) {
-        break-after: always;
-    }
-
 }
